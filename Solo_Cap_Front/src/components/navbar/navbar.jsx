@@ -1,21 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './navbar.css'
+// import { Link } from 'react-router-dom';
+// import './navbar.css'
 
 
 
-function NavBar(){
-    return (
-        <nav>
-            <ul>
+// function NavBar(){
+//     // return (
+//     //     <nav>
+//     //         <ul>
 
-                <Link  to='/flashcards'>
-                    <li> Logins </li>
-                </Link>
+//     //             <Link  to='/flashcards'>
+//     //                 <li> Logins </li>
+//     //             </Link>
 
-            </ul>
-            </nav>
-    );
-}
+//     //         </ul>
+//     //         </nav>
+//     // );
+// }
 
-export default NavBar;
+// export default NavBar;
