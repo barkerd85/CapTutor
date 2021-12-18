@@ -1,17 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavBar from './components/navbar/navbar';
+import Header from './components/header/header';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import NewUserLogin from './components/newuserlogin/newuserlogin';
 import Login from './components/login/login';
+import HomePage from './components/homepage/homepage';
 
 
+class App extends Component{
+  state = {}
+
+  componentDidMount(){
+    const jwt = localStorage.getItem('token');
+    try{
+      const user = jwtDecode(jwt);
+      this.setState({
+        user
+      });
+    } catch {
+  }
+}
 
 
-function App() {
+render() {
+  const user = this.state.user;
   return (
-    <div className="App">
-        <NavBar />
+    <div >
+        <Header />
       <Routes>
         <Route path="/" exact element={<NewUserLogin/>} />
         <Route path="/login" element={<Login />} />
@@ -20,7 +35,8 @@ function App() {
     </div>
   );
 }
-      
+}
 
 export default App;
+
         
