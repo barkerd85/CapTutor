@@ -1,0 +1,56 @@
+.form-group{
+    font-size: xx-large;
+    width: 100%;
+    background-color: rgb(124, 119, 119);
+    overflow: auto;
+    color: white;
+ 
+ 
+    
+ 
+}
+
+fieldset{
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    max-width:525px;
+    padding:30px;	
+    border-radius:8px;
+    border-color: purple;
+    border-width: 7px;
+    border-style: solid;
+    
+    
+  
+}
+
+legend{
+    color: #f1df37;
+    
+}
+
+.username{
+    color: #f1df37;
+    text-align: end;
+}
+.firstname{
+    color: #f1df37;
+    text-align: left;
+}
+.lastname{
+    color: #f1df37;
+}
+
+.middlename{
+    color: #f1df37;
+}
+
+.password{
+    color: #f1df37;
+}
+.email{
+    color: #f1df37;
+    
+}
+

@@ -11,22 +11,27 @@ function Header(){
     let user = JSON.parse(localStorage.getItem('user-info'))
     console.warn(user)
     return (
-        <div>
-            <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                <Link to='/login' > User Login </Link>
-                </Navbar>
-                <Nav>
-                    <NavDropdown title="User Name" >
-                        <Dropdown.Item>Logout</Dropdown.Item>
-                    </NavDropdown>
-
-                </Nav>
-            </div>
+    <div class="navbar">
+    <a class="active" href="/home">🏠&nbsp;&nbsp; Home</a>
+    <a href="/login">🔓&nbsp;&nbsp; Login </a>
+    <a href="/contact">📠&nbsp;&nbsp; Contact</a>
+    <a href="/logout">🔒 &nbsp;&nbsp;Logout </a>
+    </div>
     );
 }
 
-export default Header;
+export default Header; 
+      
+    
+  
+  
+                  
+                 
+                      
+                    
+                
+
+                
 
            
                  
