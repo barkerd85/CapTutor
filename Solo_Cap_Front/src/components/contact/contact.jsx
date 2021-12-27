@@ -31,31 +31,68 @@ class Contact extends React.Component {
         alert("Message failed to send.")
       }
     })
+    window.location="/home"
   }
 
   resetForm(){
     this.setState({name: '', email: '', message: ''})
+    
   }
 
   render() {
     return(
-      <div className="Contact">
+        <center>
+      <div className="form-group">
+          <br />
+          <br />
+          <br />
+          <br />
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <fieldset>
+            <legend>&nbsp;&nbsp; Contact Us 📞 &nbsp;&nbsp;</legend>
+            <br />
           <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+              <label className='name'>Name:</label>
+              <br />
+              <input type="text" className="form-control" rows="8" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+              
           </div>
+          <br />
           <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Email address</label>
+              <label className='email'>Email Address:</label>
+              <br />
               <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
           </div>
+          <br />
           <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+              <label className='message'>Message:</label>
+              <br />
+              <textarea className="form-control" rows="10" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <br />
+          <br />
+          <button type="submit" className="btn">Submit</button></fieldset>
+          <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <footer>© 2021 JD Schools</footer>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
         </form>
       </div>
+      </center>
     );
   }
 
@@ -73,3 +110,7 @@ class Contact extends React.Component {
 }
 
 export default Contact;
+                   
+                    
+                    
+                    

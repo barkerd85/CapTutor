@@ -1,0 +1,77 @@
+.form-control{
+    background-color: #f1df37;
+    width: 250px;
+    font-size: large;
+    
+    
+    
+}
+
+
+.form-group{
+    font-size: xx-large;
+    width: 100%;
+    background-color: rgb(124, 119, 119);
+    overflow: auto;
+    color: white;
+ 
+ 
+    
+ 
+}
+
+fieldset{
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    max-width:525px;
+    padding:30px;	
+    border-radius:8px;
+    border-color: purple;
+    border-width: 7px;
+    border-style: solid;
+}    
+    
+  
+
+
+legend{
+    color: #f1df37;
+    font-size: 40px;
+    
+    
+}
+
+.user{
+    color: #f1df37;
+	font-size: 35px;
+	
+				
+}
+.pass{
+    
+    text-align: left;
+    color: #f1df37;
+	font-size: 35px;
+	
+}
+.email{
+    color: #f1df37;
+	font-size: 35px;
+	
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 50%;
+}    
+
+.btn{
+    border-radius: 47%;
+    padding: 16px;
+    font-size: 15px;
+    background-color: purple;
+    color: #f1df37;
+                 
+
+}

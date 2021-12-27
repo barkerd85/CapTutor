@@ -42,17 +42,58 @@ await axios ({
 
 render(){
     return (
-    <div>
+    <center>    
+        <div className="form-group">
+            <br />
         <body>
-            <center><h3>Login</h3></center>
+        
             <form onSubmit={this.handleSubmit}>
-            <center><label for="username">User Name:</label><input name="username" type="text" value={this.state.username} onChange={this.handleChange}></input></center>
-            <center><label for="password">Password:</label><input name="password" type="password" value={this.state.password} onChange={this.handleChange}></input></center>
-            <center><button type="submit">Login</button></center>
+                <fieldset>
+                <legend>&nbsp;&nbsp; Login &nbsp;&nbsp;</legend>
+            <center><label for="username" className='user'>User Name:</label>&nbsp;&nbsp;<input name="username" type="text" value={this.state.username} onChange={this.handleChange}></input></center>
+            <br />
+            <center><label for="password" className='pass'>Password:</label>&nbsp;&nbsp;<input name="password" type="password" value={this.state.password} onChange={this.handleChange}></input></center>
+            <br />
+            <center><button  type="submit" className='btn'>Login</button></center></fieldset>
+            <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br /><br /><br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <footer>© 2021 JD Schools</footer>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
             </form>
         </body>
     </div>
+    </center> 
          )
     }
-             
+            
 }
