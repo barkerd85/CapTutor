@@ -35,6 +35,7 @@ render() {
         <Route path="/logout" exact element={<Logout/>} />
         <Route path="/home" element={<HomePage/>} />
         <Route path="/contact" element={<Contact/>} />
+        
       </Routes>
     </div>
   );

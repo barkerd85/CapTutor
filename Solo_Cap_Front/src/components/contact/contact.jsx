@@ -1,83 +1,75 @@
 import React from 'react';
 import './contact.css';
+import axios from 'axios';
 
 
 
 
-function Contact(){
-    console.log(test)
+// contact us tab tested succesfully in postman
+class Contact extends React.Component {
 
-window.location='/contact'
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
+    }
+  }
 
-return(
-    <div>
-          <center>     <div class="form-group">
-                        
-                    
-                    
-                        <br />
-                        <form onSubmit={this.handleSubmit}>
-                        
-                        <fieldset>
-                        <legend>Create New User &nbsp;&nbsp;👤</legend>
-                        <br />
-                        <div class="form-group">   
-                        <label className='username'  for="username">User Name:</label><br />
-                        <input className='textbox' name="username" type="text" placeholder='Create Username' class="form-control" value={this.state.username} onChange={this.handleChange}></input>
-                        </div>
-                        
-                        <div class="form-group">
-                        <label className='password' for="password">Create Password:</label><br />
-                        <input  name="password" type="password" placeholder='Must be 8 characters' class="form-control" value={this.state.password} onChange={this.handleChange}></input>
-                        </div>
-                       
-                        <div class="form-group">
-                        <label className='email'  for="email">Email Address:</label><br />
-                        <input type="email" class="form-control" name="email" placeholder='Enter Email' value={this.state.email} onChange={this.handleChange}></input>
-                        <br />
-                       
-                        </div>
-                        
-                        <div class="form-group">
-                        <label className='firstname' for="first_name">First Name:</label><br />
-                        <input name="first_name" type="text" placeholder='Enter First Name' class="form-control" value={this.state.first_name} onChange={this.handleChange}></input>
-                        </div>
-                        
-                        <div class="form-group">
-                        <label className='lastname'   for="last_name">Last Name:</label><br />
-                        <input name="last_name" type="text" placeholder='Enter Last Name' class="form-control" value={this.state.last_name} onChange={this.handleChange}></input>
-                        </div>
-                        
-                        <div class="form-group">
-                        <label className='middlename'  for="middle_name">Middle Name:</label><br />
-                        <input name="middle_name" placeholder='Enter Middle Name' type="text" class="form-control" value={this.state.middle_name} onChange={this.handleChange}></input>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">Submit</button></fieldset>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <footer>© 2021 JD Schools</footer>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        </form>
-                        </div></center> 
+  handleSubmit(e){
+    e.preventDefault();
+    axios({
+      method: "POST",
+      url:"http://127.0.0.1:8000/api/auth/login/contact",
+      data:  this.state
+    }).then((response)=>{
+      if (response.data.status === 'success') {
+        alert("Message Sent.");
+        this.resetForm()
+      } else if (response.data.status === 'fail') {
+        alert("Message failed to send.")
+      }
+    })
+  }
 
-    </div>
-)
+  resetForm(){
+    this.setState({name: '', email: '', message: ''})
+  }
+
+  render() {
+    return(
+      <div className="Contact">
+        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+          <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+          </div>
+          <div className="form-group">
+              <label htmlFor="exampleInputEmail1">Email address</label>
+              <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+          </div>
+          <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    );
+  }
+
+  onNameChange(event) {
+	  this.setState({name: event.target.value})
+  }
+
+  onEmailChange(event) {
+	  this.setState({email: event.target.value})
+  }
+
+  onMessageChange(event) {
+	  this.setState({message: event.target.value})
+  }
 }
+
 export default Contact;

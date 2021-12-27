@@ -6,7 +6,7 @@ import './login.css'
 
 
 
-
+// user login method
 export default class Login extends React.Component {
     state = {
         username: '',
@@ -26,7 +26,7 @@ handleChange = event => {
 handleSubmit = async event => {
     event.preventDefault();
              
-        
+//  request tested on postman to log in a created user succesfully       
 await axios ({
     method:'post',
     url:"http://127.0.0.1:8000/api/auth/login/",

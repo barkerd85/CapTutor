@@ -49,12 +49,8 @@ return (
     
 
                     <center>     <div class="form-group">
-                        
-                    
-                    
                     <br />
-                    <form onSubmit={this.handleSubmit}>
-                    
+                    <form onSubmit={this.handleSubmit}>    
                     <fieldset>
                     <legend>Create New User &nbsp;&nbsp;👤</legend>
                     <br />
@@ -67,12 +63,11 @@ return (
                     <label className='password' for="password">Create Password:</label><br />
                     <input  name="password" type="password" placeholder='Must be 8 characters' class="form-control" value={this.state.password} onChange={this.handleChange}></input>
                     </div>
-                   
+
                     <div class="form-group">
                     <label className='email'  for="email">Email Address:</label><br />
                     <input type="email" class="form-control" name="email" placeholder='Enter Email' value={this.state.email} onChange={this.handleChange}></input>
                     <br />
-                   
                     </div>
                     
                     <div class="form-group">
@@ -91,6 +86,13 @@ return (
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Submit</button></fieldset>
+                    
+                    
+                    
+                   
+                    
+                   
+                    
                     <br />
                     <br />
                     <br />

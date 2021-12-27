@@ -27,11 +27,10 @@ function HomePage(){
 
     return (
         <div>
-                <table> 
-                    
-                   
-                    </table>
-                </div>
+
+            
+        </div>
+       
             )
             
         }
