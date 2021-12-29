@@ -67,7 +67,7 @@ class Contact extends React.Component {
           <div className="form-group">
               <label className='message'>Message:</label>
               <br />
-              <textarea className="form-control" rows="10" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+              <textarea className="form-control" rows="8" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </div>
           <br />
           <br />

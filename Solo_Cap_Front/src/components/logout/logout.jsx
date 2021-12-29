@@ -1,19 +1,27 @@
 import React from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import './logout.css';
+import Alert from 'react'
 
 
 
-function Logout(){
+function Logout() {
 
-window.location='/logout'
+    
 
-return(
-    <div>
-        <p>You have been logged out.</p>
+   window.location="/login"; 
+   localStorage.clear();
+   alert("Logged out")
 
-    </div>
-)
-}
-export default Logout;
 
+
+
+
+    return (
+        <Alert severity="success"> Logged Out </Alert>
+        
+    )
+}            
+
+         
+export default Logout

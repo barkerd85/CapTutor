@@ -7,6 +7,7 @@ import Login from './components/login/login';
 import HomePage from './components/homepage/homepage';
 import Logout from './components/logout/logout';
 import Contact from './components/contact/contact';
+import MultipleChoice from './components/multiplechoice/multiplechoice';
 
 
 class App extends Component{
@@ -23,6 +24,11 @@ class App extends Component{
   }
 }
 
+// logout = () => {
+//   localStorage.clear();
+//   window.location="/login";
+// }
+
 
 render() {
   const user = this.state.user;
@@ -35,13 +41,14 @@ render() {
         <Route path="/logout" exact element={<Logout/>} />
         <Route path="/home" element={<HomePage/>} />
         <Route path="/contact" element={<Contact/>} />
-        
-      </Routes>
+        <Route path="/mc" element={<MultipleChoice/>} />
+        </Routes>
     </div>
   );
 }
 }
 
 export default App;
+      
 
         

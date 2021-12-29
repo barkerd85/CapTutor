@@ -52,7 +52,8 @@ return (
                     <br />
                     <form onSubmit={this.handleSubmit}>    
                     <fieldset>
-                    <legend>Create New User &nbsp;&nbsp;👤</legend>
+                    <legend>&nbsp;&nbsp;Create New User &nbsp;&nbsp;👤</legend>
+                    
                     <br />
                     <div class="form-group">   
                     <label className='username'  for="username">User Name:</label><br />
@@ -84,7 +85,7 @@ return (
                     <label className='middlename'  for="middle_name">Middle Name:</label><br />
                     <input name="middle_name" placeholder='Enter Middle Name' type="text" class="form-control" value={this.state.middle_name} onChange={this.handleChange}></input>
                     </div>
-                    
+                    <br />
                     <button type="submit" class="btn btn-primary">Submit</button></fieldset>
                     <br />
                     <br />

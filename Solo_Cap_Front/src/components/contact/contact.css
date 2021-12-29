@@ -9,7 +9,7 @@
 
 
 .form-group{
-    font-size: x-large;
+    font-size: large;
     width: 100%;
     background-color: rgb(124, 119, 119);
     overflow: auto;
@@ -23,7 +23,7 @@
 fieldset{
     align-items: center;
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
     max-width:525px;
     padding:30px;	
     border-radius:8px;

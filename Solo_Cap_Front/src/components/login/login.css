@@ -72,6 +72,9 @@ legend{
     font-size: 15px;
     background-color: purple;
     color: #f1df37;
-                 
+}      
 
+.alert{
+    background-color: aqua;
 }
+

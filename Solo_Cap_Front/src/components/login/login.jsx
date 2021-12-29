@@ -42,10 +42,11 @@ await axios ({
 
 render(){
     return (
+        <body>
     <center>    
         <div className="form-group">
             <br />
-        <body>
+        
         
             <form onSubmit={this.handleSubmit}>
                 <fieldset>
@@ -90,9 +91,11 @@ render(){
                     <br />
                     <br />
             </form>
-        </body>
+        
     </div>
-    </center> 
+    
+    </center>
+     </body>
          )
     }
             
