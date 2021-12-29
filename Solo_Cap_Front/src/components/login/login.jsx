@@ -46,11 +46,17 @@ render(){
     <center>    
         <div className="form-group">
             <br />
+            <br />
+            <br />
+            <br />
+            <br />
         
         
             <form onSubmit={this.handleSubmit}>
                 <fieldset>
                 <legend>&nbsp;&nbsp; Login &nbsp;&nbsp;</legend>
+                <br />
+                <br />
             <center><label for="username" className='user'>User Name:</label>&nbsp;&nbsp;<input name="username" type="text" value={this.state.username} onChange={this.handleChange}></input></center>
             <br />
             <center><label for="password" className='pass'>Password:</label>&nbsp;&nbsp;<input name="password" type="password" value={this.state.password} onChange={this.handleChange}></input></center>
@@ -84,8 +90,16 @@ render(){
                     <br />
                     <br />
                     <br />
-                    <footer>© 2021 JD Schools</footer>
+                    
                     <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br /><footer>© 2021 JD Schools</footer>
                     <br />
                     <br />
                     <br />

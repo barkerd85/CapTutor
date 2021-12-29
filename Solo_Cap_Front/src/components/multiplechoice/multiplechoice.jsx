@@ -61,6 +61,15 @@ render(){
   
   </form>
   <button onClick={this.submitAnswer}>Submit Answer</button>
+  <h1>2. Which of the following statement is False?</h1>
+  <form >
+  <input type="radio" onSubmit={this.submitAnswer} name='choice' value="Scripting"/> Variable names can be arbitrarily long.
+  <input type="radio" onSubmit={this.submitAnswer} name='choice' value="Programming"/> They can contain both letters and numbers.
+  <input type="radio" onSubmit={this.submitAnswer} name='choice' value="Application"/> Variable name can begin with underscore.
+  <input type="radio" onSubmit={this.submitAnswer} name='choice' value="None of These"/> Variable name can begin with number.
+  
+  </form>
+  <button onClick={this.submitAnswer}>Submit Answer</button>
         </div>
         
     )

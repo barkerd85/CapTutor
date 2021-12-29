@@ -16,6 +16,7 @@ function Header(){
     <a href="/login">🔓&nbsp;&nbsp; Login </a>
     <a href="/contact">📠&nbsp;&nbsp; Contact</a>
     <a href="/logout">🔒 &nbsp;&nbsp;Logout </a>
+    
     </div>
     );
 }

@@ -43,29 +43,30 @@ class Contact extends React.Component {
     return(
         <center>
       <div className="form-group">
-          <br />
-          <br />
-          <br />
-          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />                    
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
             <fieldset>
             <legend>&nbsp;&nbsp; Contact Us 📞 &nbsp;&nbsp;</legend>
             <br />
           <div className="form-group">
-              <label className='name'>Name:</label>
+              <label className='name'>Name :</label>
               <br />
               <input type="text" className="form-control" rows="8" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
               
           </div>
           <br />
           <div className="form-group">
-              <label className='email'>Email Address:</label>
+              <label className='email'>Email Address :</label>
               <br />
               <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
           </div>
           <br />
           <div className="form-group">
-              <label className='message'>Message:</label>
+              <label className='message'>Message :</label>
               <br />
               <textarea className="form-control" rows="8" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </div>
@@ -85,6 +86,11 @@ class Contact extends React.Component {
                     <br />
                     <br />
                     <footer>© 2021 JD Schools</footer>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <br />
                     <br />
                     <br />

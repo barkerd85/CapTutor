@@ -1,5 +1,5 @@
 .form-control{
-    background-color: #f1df37;
+    
     width: 250px;
     font-size: large;
     
@@ -44,7 +44,7 @@ legend{
 
 .name{
     color: #f1df37;
-	font-size: 35px;
+	font-size: x-large;
 	
 				
 }
@@ -52,12 +52,12 @@ legend{
     
     text-align: left;
     color: #f1df37;
-	font-size: 35px;
+	font-size: x-large;
 	
 }
 .email{
     color: #f1df37;
-	font-size: 35px;
+	font-size: x-large;
 	
 }
 
@@ -68,7 +68,7 @@ legend{
 
 .btn{
     border-radius: 47%;
-    padding: 16px;
+    padding: 18px;
     font-size: 15px;
     background-color: purple;
     color: #f1df37;

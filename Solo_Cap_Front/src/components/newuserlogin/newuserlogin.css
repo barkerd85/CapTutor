@@ -32,25 +32,35 @@ legend{
 
 .username{
     color: #f1df37;
-    text-align: end;
+    font-size: x-large;
+   
 }
 .firstname{
     color: #f1df37;
-    text-align: left;
+    font-size: x-large;
+   
 }
 .lastname{
     color: #f1df37;
+    font-size: x-large;
 }
 
 .middlename{
     color: #f1df37;
+    font-size: x-large;
 }
 
 .password{
     color: #f1df37;
+    font-size: x-large;
 }
-.email{
+.email1{
     color: #f1df37;
+    font-size: x-large;
+   
     
 }
 
+div{
+    height: 100%; 
+}
