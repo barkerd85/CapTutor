@@ -8,6 +8,8 @@ import HomePage from './components/homepage/homepage';
 import Logout from './components/logout/logout';
 import Contact from './components/contact/contact';
 import MultipleChoice from './components/multiplechoice/multiplechoice';
+import CreateCard from './components/flashcards/flashcards';
+
 
 
 class App extends Component{
@@ -42,6 +44,7 @@ render() {
         <Route path="/home" element={<HomePage/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/mc" element={<MultipleChoice/>} />
+        <Route path="/fc" element={<CreateCard/>} />
         </Routes>
     </div>
   );
