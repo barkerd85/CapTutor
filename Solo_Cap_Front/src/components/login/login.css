@@ -10,10 +10,10 @@
 
 .form-group{
     font-size: xx-large;
-    width: 100%;
+    width: 110%;
     background-color: rgb(124, 119, 119);
     overflow: auto;
-    color: white;
+    color: black
  
  
     
@@ -22,10 +22,10 @@
 
 fieldset{
     align-items: center;
-    color: white;
+    color: rgb(12, 11, 11);
     font-size: xx-large;
-    max-width:525px;
-    padding:30px;	
+    max-width:500px;
+    /* padding:8px;	 */
     border-radius:8px;
     border-color: purple;
     border-width: 7px;
@@ -43,16 +43,19 @@ legend{
 }
 
 .user{
+    font-size: x-large;
     color: #f1df37;
-	font-size: x-large;
+	
 	
 				
 }
 .pass{
     
+    
     text-align: left;
     color: #f1df37;
-	font-size: x-large;
+    font-size: x-large;
+	
 	
 }
 
@@ -64,13 +67,11 @@ legend{
 
 .btn{
     border-radius: 47%;
-    padding: 16px;
+    padding: 8px;
     font-size: 15px;
     background-color: purple;
     color: #f1df37;
 }      
 
-.alert{
-    background-color: aqua;
-}
+
 

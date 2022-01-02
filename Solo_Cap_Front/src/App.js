@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Header from './components/header/header';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import NewUserLogin from './components/newuserlogin/newuserlogin';
@@ -7,8 +6,19 @@ import Login from './components/login/login';
 import HomePage from './components/homepage/homepage';
 import Logout from './components/logout/logout';
 import Contact from './components/contact/contact';
-import MultipleChoice from './components/multiplechoice/multiplechoice';
-import CreateCard from './components/flashcards/flashcards';
+import {MultipleChoiceOne, MultipleChoiceTwo, MultipleChoiceThree, MultipleChoiceFour, MultipleChoiceFive, MultipleChoiceSix, MultipleChoiceSeven, MultipleChoiceEight, MultipleChoiceNine, MultipleChoiceTen} from './components/multiplechoice/multiplechoice';
+import { FlashCardsOne } from './components/flashcard/flashcards';
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,13 +48,26 @@ render() {
     <div >
         <Header />
       <Routes>
-        <Route path="/" exact element={<NewUserLogin/>} />
+        <Route path="/" exact={true} element={<NewUserLogin/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" exact element={<Logout/>} />
         <Route path="/home" element={<HomePage/>} />
         <Route path="/contact" element={<Contact/>} />
-        <Route path="/mc" element={<MultipleChoice/>} />
-        <Route path="/fc" element={<CreateCard/>} />
+        <Route path="/mc/js/1" exact={true} element={<MultipleChoiceOne/>} />
+        <Route path="/mc/js/2" exact={true} element={<MultipleChoiceTwo/>} />
+        <Route path="/mc/js/3" exact={true} element={<MultipleChoiceThree/>} />
+        <Route path="/mc/js/4" exact={true} element={<MultipleChoiceFour/>} />
+        <Route path="/mc/js/5" exact={true} element={<MultipleChoiceFive/>} />
+        <Route path="/mc/p/1" exact={true} element={<MultipleChoiceSix/>}/>
+        <Route path="/mc/p/2" exact={true} element={<MultipleChoiceSeven/>}/>
+        <Route path="/mc/p/3" exact={true} element={<MultipleChoiceEight/>}/>
+        <Route path="/mc/p/4" exact={true} element={<MultipleChoiceNine/>}/>
+        <Route path="/mc/p/5" exact={true} element={<MultipleChoiceTen/>}/>
+        <Route path="/fc/js/1" exact={true} element={<FlashCardsOne/>}/>
+
+        
+        
+        
         </Routes>
     </div>
   );

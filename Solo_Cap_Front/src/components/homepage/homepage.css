@@ -1,5 +1,10 @@
+body{
+    background-color: darkgray;
+  }
+
+
 * {
-    color: #fff;
+    color: black;
     font-family: "Avenir", sans-serif;
     font-size: 18px;
     

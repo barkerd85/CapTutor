@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 
 
+
 export default class NewUserLogin extends React.Component {
     state = {
         username: '',
@@ -137,8 +138,7 @@ return (
 }
                     
                     
-                   
-                    
+
                    
                     
                     

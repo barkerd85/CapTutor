@@ -1,29 +1,29 @@
 .form-group{
     font-size: x-large;
     width: 100%;
-    background-color: rgb(124, 119, 119);
+    background-color: rgb(124, 119, 119); 
     overflow: auto;
-    color: white;
+    color: black;
  
  
     
  
-}
+} 
 
 fieldset{
     align-items: center;
-    color: white;
+    color: black;
     font-size: x-large;
     max-width:525px;
-    padding:30px;	
+    padding:10px;	 
     border-radius:8px;
     border-color: purple;
     border-width: 7px;
     border-style: solid;
-    
+     
     
   
-}
+} 
 
 legend{
     color: #f1df37;
@@ -53,7 +53,7 @@ legend{
 .password{
     color: #f1df37;
     font-size: x-large;
-}
+} 
 .email1{
     color: #f1df37;
     font-size: x-large;
@@ -64,3 +64,8 @@ legend{
 div{
     height: 100%; 
 }
+
+.textbox{
+    color: black;
+    font-style: italic;
+}  

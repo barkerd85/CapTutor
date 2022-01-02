@@ -59,7 +59,7 @@ render(){
                 <br />
             <center><label for="username" className='user'>User Name:</label>&nbsp;&nbsp;<input name="username" type="text" value={this.state.username} onChange={this.handleChange}></input></center>
             <br />
-            <center><label for="password" className='pass'>Password:</label>&nbsp;&nbsp;<input name="password" type="password" value={this.state.password} onChange={this.handleChange}></input></center>
+            <center><label for="password" className='pass'> Password: <br /></label>&nbsp;&nbsp;<input name="password" type="password" value={this.state.password} onChange={this.handleChange}></input></center>
             <br />
             <center><button  type="submit" className='btn'>Login</button></center></fieldset>
             <br />
