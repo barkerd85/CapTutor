@@ -59,11 +59,26 @@ body{
 .questions {
   border:3px solid purple;
   border-radius: 5px;
-  padding:5px;
+  padding:7px;
   margin-left:15%;
-  margin-bottom:1%;
+  margin-bottom:2%;
+  margin-top: 3%;
   width:70%;
 }
 input[type='radio']:after:checked{
   background-color:purple;
 }
+
+li {
+ 
+  text-decoration: none;
+  }
+
+
+  button{
+    color: yellow;
+    background-color: purple;
+    border-radius: 15px;
+    padding: 5px;
+    
+  }

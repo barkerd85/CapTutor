@@ -55,7 +55,7 @@ body{
     }
     
     .full {
-    background-color: rgb(65, 60, 60);
+    background-color: rgb(77, 74, 74);
     }
     
     
@@ -115,5 +115,10 @@ body{
     }
     
     li {
-    margin: 2.5% 0;
-    }
+      margin: 2.5% 0;
+      
+      }
+
+      h5{
+        text-decoration: purple;
+      }

@@ -1,21 +1,11 @@
 import './homepage.css';
-import axios from 'axios';
-import React, { useState , useEffect} from 'react';
-import './homepage.css'
+import React from 'react';
+
+
 
 
 function HomePage(){
-    // let user = JSON.parse(localStorage.getItem('user-info'))
-    // console.warn(user)
-    // return (
-    // <div class="navbar" className='navbar2'>
-    // <a class="active" className='python' href="/home">&nbsp;&nbsp;  Python Flashcards 🐍</a>
-    // <a href="/login" className='python'>&nbsp;&nbsp;  Python Practice Test 🐍 </a>
-    // <a class="active" className='js' href="/home">&nbsp;&nbsp; JavaScript Flashcards</a>
-    // <a href="/login" className='js'>&nbsp;&nbsp; JavaScript Practice Test </a>
     
-    
-    // </div>
 
     return(
 
@@ -24,81 +14,50 @@ function HomePage(){
     
         <div class="comparecontainer">
         <div class="compare lite">
-    <h2>FlashCards</h2>
-    <h3>Python 🐍</h3>
+    <h2>FlashCard </h2>
+    <h3>🐍 PYTHON 🐍</h3>
+    
     <ul>
-        <li>: link 1</li>
-        <li>: link 2</li>
-        <li>: link 3</li>
-        <li>: link 4</li>
-        <h4>JavaScript 🍮</h4>
-        <li>: link 1</li>
-        <li>: link 2</li>
-        <li>: link 3</li>
-        <li>: link 4</li>
-        </ul>
+        
+        <li><a href="fc/py/1"> Python Chapter 1</a></li>
+        <li><a href="fc/py/2"> Python Chapter 2</a></li>
+        <li><a href="fc/py/3"> Python Chapter 3</a></li>
+        <li><a href="fc/py/4"> Python Chapter 4</a></li>
+        <br /><br />
         <br />
-        <h5>maybe video links?</h5>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-        
-    
-    
-
-    
-    {/* <a href="#" class="button lite">button</a> */}
-    
-        </div>
-        </div>
-    
-        <div class="comparecontainer">
-        <div class="compare full">
-    <h2>Practice Test</h2>
-    <h3>Python 🐍</h3>
-    <ul>
-        <li>: link 1</li>
-        <li>: link 2</li>
-        <li>: link 3</li>
-        <li>: link 4</li>
-        <h4>JavaScript 🍮</h4>
-        <li>: link 1</li>
-        <li>: link 2</li>
-        <li>: link 3</li>
-        <li>: link 4</li>
+        <br />
+        <h4>🍮 JAVASCRIPT 🍮</h4>
+        <li><a href="fc/js/1"> JavaScript Chapter 1</a></li>
+        <li><a href="fc/js/2"> JavaScript Chapter 2</a></li>
+        <li><a href="fc/js/3"> JavaScript Chapter 3</a></li>
+        <li><a href="fc/js/4"> JavaScript Chapter 4</a></li>
         </ul>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        </div>
+
+    <div class="comparecontainer">
+    <div class="compare full">
+    <h2>Practice Test</h2>
+    <h3>🐍 PYTHON 🐍</h3>
+    <ul>
+    <li><a href="mc/py/1"> Python Chapter 1</a></li>
+    <li><a href="mc/py/2"> Python Chapter 2</a></li>
+    <li><a href="mc/py/3"> Python Chapter 3</a></li>
+    <li><a href="mc/py/4"> Python Chapter 4</a></li>
+    <br /><br /><br /><br />
+    <h4>🍮 JAVASCRIPT 🍮</h4>
+    <li><a href="mc/js/1"> JavaScript Chapter 1</a></li>
+    <li><a href="mc/js/2"> JavaScript Chapter 2</a></li>
+    <li><a href="mc/js/3"> JavaScript Chapter 3</a></li>
+    <li><a href="mc/js/4"> JavaScript Chapter 4</a></li>
+    </ul>                    
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    </div>
+
     
         
-    <h5>maybe video links?</h5>
-    
-    {/* <a href="#" class="button full">button</a> */}
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-
-    
-        </div>
-        </div>
     
     </div>
         </div>
