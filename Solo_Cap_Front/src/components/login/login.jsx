@@ -55,10 +55,9 @@ render(){
             <form onSubmit={this.handleSubmit}>
                 <fieldset>
                 <legend>&nbsp;&nbsp; Login &nbsp;&nbsp;</legend>
-                <br />
-                <br />
-            <center><label for="username" className='user'>User Name:</label>&nbsp;&nbsp;<input name="username" type="text" value={this.state.username} onChange={this.handleChange}></input></center>
-            <br />
+               <br />
+            <center><br /><label for="username" className='user'>User Name:</label>&nbsp;&nbsp;<input name="username" type="text" value={this.state.username} onChange={this.handleChange}></input></center>
+            <br /><br />
             <center><label for="password" className='pass'> Password: <br /></label>&nbsp;&nbsp;<input name="password" type="password" value={this.state.password} onChange={this.handleChange}></input></center>
             <br />
             <center><button  type="submit" className='btn'>Login</button></center></fieldset>
@@ -90,7 +89,7 @@ render(){
                     <br />
                     <br />
                     <br />
-                    
+                    <br />
                     <br />
                     <br />
                     <br />

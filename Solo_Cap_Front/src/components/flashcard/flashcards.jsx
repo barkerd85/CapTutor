@@ -1008,7 +1008,7 @@ export class FlashCardsOne extends React.Component{
                             <br />
                             <br />
                             <br />
-                            <br /><footer>© 2021 JD Schools</footer>
+                            
                           </div></center> 
                           
                         </div>

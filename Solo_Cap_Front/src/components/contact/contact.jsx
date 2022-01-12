@@ -85,7 +85,7 @@ class Contact extends React.Component {
                     <br />
                     <br />
                     <br />
-                    <footer>© 2021 JD Schools</footer>
+                    <br />
                     <br />
                     <br />
                     <br />
