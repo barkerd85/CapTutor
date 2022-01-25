@@ -65,13 +65,19 @@ legend{
     border-radius: 50%;
 }    
 
-.btn{
+/* .btn{
     border-radius: 47%;
     padding: 6px;
     font-size: 15px;
     background-color: purple;
     color: #f1df37;
-}      
+}       */
+
+btn btn-link{
+    color: aqua;
+    font-size: xx-large;
+
+}
 
 
 

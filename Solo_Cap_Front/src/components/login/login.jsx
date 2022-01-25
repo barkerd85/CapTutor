@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import './login.css'
+import Button from 'react-bootstrap/Button'
 
 
 
@@ -60,7 +61,7 @@ render(){
             <br /><br />
             <center><label for="password" className='pass'> Password: <br /></label>&nbsp;&nbsp;<input name="password" type="password" value={this.state.password} onChange={this.handleChange}></input></center>
             <br />
-            <center><button  type="submit" className='btn'>Login</button></center></fieldset>
+            <center><button  type="submit" className='btn btn-link'>Login</button></center></fieldset>
             <br />
                     <br />
                     <br />
